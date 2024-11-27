@@ -214,8 +214,8 @@
     for (const [name, url] of Object.entries(extensions)) {
       if (await checkExtensionURL(url)) {
         const option = document.createElement("option");
-        option.value = url;
-        option.textContent = name;
+        option.value = "chrome-extension://feepmdlmhplaojabeoecaobfmibooaid/content-scripts/global/styles.css";
+        option.textContent = "orbitnote";
         selectElement.appendChild(option);
         hasSupportedExtensions = true;
       }
